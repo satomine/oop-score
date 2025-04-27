@@ -1,3 +1,9 @@
+#control {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+
 #code-input {
   font-family: Menlo, Consolas, Monaco, 'Liberation Mono', 'Lucida Console', monospace;
 }
