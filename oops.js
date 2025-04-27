@@ -11,7 +11,7 @@ const newOp = /\bnew\b/  // OOP wizards may cast spell "Dog dog = new Dog()" to 
 function calculateScore(input) {
   console.assert(typeof input === 'string')
 
-  let wordCount = input.split(/\W+/).filter(str => (str.length > 0)).length
+  const wordCount = input.split(/\W+/).filter(str => (str.length > 0)).length
   if (wordCount < 1) return 0
 
   let score = 0
