@@ -3,10 +3,11 @@
   <head>
     <meta charset='UTF-8'>
     <title>OOP Score - How object-oriented is your code?</title>
+    <link rel='stylesheet' href='main.css'>
     <script src='oops.js'></script>
     <script>
       function calculate() {
-        const input = document.getElementById('input').value
+        const input = document.getElementById('code-input').value
         const score = calculateScore(input)
         document.getElementById('score').innerText = String(Math.round(score))
       }
@@ -17,7 +18,7 @@
     <button type='button' onclick='calculate()'>Calculate</button>
     <p>Score: <span id='score'>-</span></p>
     <textarea
-      id='input'
+      id='code-input'
       autocomplete='off'
       autocorrect='off'
       cols='120'
